@@ -6,7 +6,7 @@ import '../App';
   const Cards = props => (
     <div className="card" onClick={() => props.clickCount(props.id)}>
       <div className="img-space">
-        <img alt={props.name} src={props.image} />
+        <img className="carimages" alt={props.name} src={props.image} />
       </div>
     </div>
   );
