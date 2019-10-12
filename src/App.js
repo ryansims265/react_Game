@@ -46,7 +46,7 @@ class App extends Component {
     card.count = 0;
   });
   //Then we alert the user that the game is over and show them their score 
-  alert(`Game Over :( \nscore: ${this.state.score}`);
+  alert(`Game Over Your score: ${this.state.score}`);
   this.setState({score: 0});
   return true;
 }
