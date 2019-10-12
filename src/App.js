@@ -1,26 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
+import Header from './components/Header';
+import Footer from "./components/Footer";
+import Wrapper from "./components/Wrapper";
+import Cards from "./components/Cards";
+import cards from "./cards.json";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+class App extends Component {
+  
+  state = {
+    cards,
+    score: 0,
+    highscore: 0
+  };
+  
+  
+  render() {
+    return (
+      <Wrapper>
+        <Header score={this.state.score} highscore={this.state.highscore}></Header>
+        {this.state.cards.map(card => (
+          <Cards
+            clickCount={this.clickCount}
+            id={card.id}
+            key={card.id}
+            image={card.image}
+          />
+        ))}
+        <Footer />
+      </Wrapper>
+    );
+  }
+  };
+
+
+
 
 export default App;
+
+
