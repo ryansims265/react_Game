@@ -1,4 +1,4 @@
-Hi there and welcome to my Super Street JDM Click Game!
+## Hi there and welcome to my Super Street JDM Click Game!
 
 You can check it out here: 
 
