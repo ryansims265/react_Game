@@ -3,7 +3,7 @@ import "../App";
 
 const Wrapper = props => (
     
-    <div className="wrapper">{props.child}</div>
+    <div className="wrapper">{props.children}</div>
   );
 
 export default Wrapper;
