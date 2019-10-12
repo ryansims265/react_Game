@@ -1,3 +1,11 @@
+Hi there and welcome to my Super Street JDM Click Game!
+
+You can check it out here: 
+
+Instructions: You can click any one of the images of traditional JDM imports and you will receive a point. However then you can no longer click the same image or you lose the game. See how high of a streak you can get and see if you can beat the high school! 
+
+Technology: This was made using React, Bootstrap, HTML, CSS, and Javascript. 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
